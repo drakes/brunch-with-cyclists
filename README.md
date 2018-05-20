@@ -30,13 +30,21 @@ Brunch with Cyclists hooks up a bunch of useful tools and provides opinionated d
 Additionally, phantomjs, stylus, and styledocco should be installed globally to make their executables available (for tests and style guide):
 
 ```
-npm install -g phantomjs-prebuilt stylus styledocco
+npm install -g brunch
 ```
 
 ### Create a project with this skeleton
 
 ```
 brunch new gh:drakes/brunch-with-cyclists [optional-output-dir]
+```
+
+#### Optionally uninstall Brunch global
+
+The `brunch` global is only required to start a new project; from that point forward everything to build and use the project is installed locally in that project's directories. You may optionally uninstall global brunch afterward:
+
+```
+npm uninstall -g brunch
 ```
 
 ### Build, run tests, and launch a server
